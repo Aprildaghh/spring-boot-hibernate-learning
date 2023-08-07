@@ -1,3 +1,9 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
 
 // application.properties files
 course_3/course_3/src/main/resources/application.properties
@@ -7,3 +13,11 @@ course_4_project_2/src/main/resources/application.properties
 course_5/src/main/resources/application.properties
 
 
+// intelij idea
+.idea
+*.iws
+*.iml
+*.ipr
+
+// vscode
+.vscode/
