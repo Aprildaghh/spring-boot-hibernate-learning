@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+
+    <style>
+        .logout-button {
+            width: 60px;
+            height: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h3>
+        Welcome. Welcome to City 17.
+    </h3>
+
+    <form action="#" th:action="@{/logout}" method="POST">
+        <button type="submit" value="Logout" class="logout-button">Logout</button>
+    </form>
+</body>
+</html>
