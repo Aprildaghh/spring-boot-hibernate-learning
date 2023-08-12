@@ -31,17 +31,21 @@
         Role(s): <span sec:authentication="principal.authorities"></span>
     </p>
 
-    <hr>
+    <div sec:authorize="hasRole('MANAGER')")>
+        <hr>
 
-    <p>
-        <a th:href="@{/leaders}">Leadership Meeting </a> (only for managers)
-    </p>
+        <p>
+            <a th:href="@{/leaders}">Leadership Meeting </a> (only for managers)
+        </p>
+    </div>
 
-    <hr>
+    <div sec:authorize="hasRole('ADMIN')">
+        <hr>
 
-    <p>
-        <a th:href="@{/systems}">IT Systems Meeting </a> (only for admins)
-    </p>
+        <p>
+            <a th:href="@{/systems}">IT Systems Meeting </a> (only for admins)
+        </p>
+    </div>
 
     <hr>
 
